@@ -1,4 +1,4 @@
-import {auth,createUserWithEmailAndPassword,onAuthStateChanged} from '../firebase.js'
+import {auth,createUserWithEmailAndPassword,onAuthStateChanged} from './firebase.js'
 
 let formFeild = document.querySelectorAll("form input");
 
@@ -31,8 +31,14 @@ const signUp = ()=>{
 signUpBtn.addEventListener('click',signUp);
 
 
-onAuthStateChanged(auth, (user) => {
+// onAuthStateChanged(auth, (user) => {
+//     if (user) {
+//         window.location.href = 'Admin.html'
+//     } 
+  // });
+  onAuthStateChanged(auth, (user) => {
     if (user) {
-        window.location.href = '../Dashboard/Admin.html'
+        window.location.href = 'admin.html'
     } 
   });
+  

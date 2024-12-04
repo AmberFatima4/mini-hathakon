@@ -1,4 +1,4 @@
-import { auth,signOut,onAuthStateChanged } from "../firebase.js";
+import { auth,signOut,onAuthStateChanged } from "./firebase.js";
 
 let logout = document.getElementById('logout');
 
@@ -20,6 +20,6 @@ logout.addEventListener('click',Logout)
 
 onAuthStateChanged(auth, (user) => {
     if (!user) {
-        window.location.href = '../Login/login.html'
+        window.location.href = 'login.html'
     } 
   });

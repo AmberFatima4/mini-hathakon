@@ -1,5 +1,5 @@
 
-import {sendPasswordResetEmail,auth,signInWithEmailAndPassword,onAuthStateChanged} from '../firebase.js';
+import {sendPasswordResetEmail,auth,signInWithEmailAndPassword,onAuthStateChanged} from './firebase.js';
 
 let formFeild = document.querySelectorAll("form input");
 
@@ -64,7 +64,7 @@ forgotPass.addEventListener('click',forgotPassword);
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        window.location.href = '../Dashboard/dashboard.html'
+        window.location.href = 'admin.html'
     } 
   });
   
