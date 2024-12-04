@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header img {
+    height: 30px;
+}
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.header .search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 5px;
+}
+.header .login-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.main-title {
+    text-align: center;
+    margin: 40px 0;
+}
+.main-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.main-title p {
+    font-size: 18px;
+    color: #666666;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar {
+    width: 20%;
+}
+.sidebar h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+.main-content {
+    width: 75%;
+}
+.trending-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.trending-topics span {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.article {
+    margin-bottom: 20px;
+}
+.article h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.article p {
+    font-size: 16px;
+    color: #666666;
+}
+.article .meta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #999999;
+}
+.article .meta span {
+    margin-right: 10px;
+}
+.newsletter {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+.newsletter h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+}
+.footer {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer img {
+    height: 100px;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

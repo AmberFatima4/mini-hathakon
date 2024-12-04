@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: #f0f4f8; /* Light background for contrast */
+    font-family: 'Roboto Mono', monospace;
+    margin: 0; /* Reset default margins */
+    padding: 20px; /* Add padding to prevent overflow */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color:  #007bff; /* Navbar background color */
+    height: 80px; /* Crgb(154, 79, 18)nt height */
+}
+
+.navbar-brand {
+    color: white; /* Text color for navbar */
+    font-size: 1.5rem; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Centering the Post Maker Card */
+.container-fluid2 {
+    align-items: flex-start; /* Align contents at the start vertically */
+    flex-direction: column; /* Stack elements vertically */
+    
+}
+
+/* Card Styling */
+.card {
+    border: 2px solid  #007bff; /* Border color for card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 600px; /* Increase max width for better appearance */
+    width: 100%; /* Full width */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.card:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Form Label and Input Styles */
+.form-label {
+    color:  #007bff; /* Label color */
+    font-weight: bold; /* Bold text */
+}
+
+.form-control {
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid  #007bff; /* Border color */
+    font-size: 1rem; /* Increase font size for better readability */
+}
+
+/* Button Styles */
+.btn {
+    background-color:  #007bff; /* Button background */
+    color: white; /* Button text color */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.4s, transform 0.2s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #7cccad; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Image Selection Styles */
+.bg-img {
+    width: 60px; /* Increase size for visibility */
+    height: 60px; /* Increase size for visibility */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s; /* Smooth scale transition */
+}
+
+.bg-img:hover {
+    transform: scale(1.1); /* Slight scale on hover */
+}
+
+/* Highlight Selected Image */
+.image-list-selected {
+    border: 2px solid  #007bff; /* Highlight border for selected image */
+}
+
+/* Posts Section Styling */
+#posts {
+    margin-top: 20px; /* Space above posts section */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside posts */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background for posts */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Post Card Styling */
+.card-header {
+    background-color: #f8f9fa; /* Light background for header */
+    border-bottom: 2px solid  #007bff; /* Border below header */
+    color: #007bff /* Header text color */
+}
+
+.card-body {
+    background-color: #ffffff; /* White background for card body */
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+/* Additional Margin for Post Timestamp */
+.ps-3 {
+    margin-bottom: 0; /* Reset margin for better spacing */
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 1580px) {
+    .card {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        margin: 15px 0;
+        width: 100%;
+    }
+
+}
+@media (max-width: 1237px) {
+    /* Adjust container width and padding */
+    .container-fluid {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Navbar brand font size for smaller screens */
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    /* Reduce card shadow and spacing */
+    .card {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        margin: 15px 0;
+        width:100%;
+    }
+
+    /* Font size adjustments for text */
+    .fontStyle {
+        font-size: 0.9rem;
+    }
+
+    /* Image size adjustments */
+    .bg-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Adjust button padding and font size */
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    /* Card body padding and alignment adjustments */
+    .card-body {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 1021px) {
+    .card{
+        width: 20em;
+    }
+}
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 30em;
+        padding: 10px;
+    }
+
+    .bg-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    .card{
+        width: 20em;
+    }
+
+
+    .color-blue {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .bg-green {
+        height: 60px;
+    }
+
+    .bg-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .container-fluid {
+        padding: 5px;
+    }
+
+    .fontStyle {
+        font-size: 0.9rem;
+    }
+
+    .color-blue {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 10px;
+        width: 16em;
+    }
+} 
+@media (max-width: 640px) {
+    .card{
+        width: 19em;
+    }
+}
+@media (max-width: 351px) {
+    .card{
+        width: 15em;
+    }
+}
